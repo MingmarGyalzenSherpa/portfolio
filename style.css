@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --primary: #121212;
+  --secondary: #f5ecec;
+}
 
 * {
   margin: 0;
@@ -7,98 +12,70 @@
 }
 
 body {
-  background-color: #1e1e1e;
   font-size: 10px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  line-height: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
-a {
-  padding: 0.2rem;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
+.hide {
+  display: none;
 }
 
-a:hover {
-  color: aqua;
+.btn {
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
-.btn-wrap {
-  background-color: white;
-  color: black;
-  display: inline-block;
+.container {
   border: 1px solid red;
-  height: 40px;
-  width: 120px;
+  padding: 1rem;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
-ul {
-  list-style-type: none;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
 }
 
 nav {
-  max-width: 90%;
-  margin: 30px auto 50px;
+  position: relative;
 }
 
-.nav {
-  font-size: 1.1rem;
+nav .container {
   display: flex;
-  gap: 2rem;
-  justify-content: flex-end;
-}
-
-.hero {
-  display: flex;
-  width: 88%;
-  margin: 100px auto 0;
   justify-content: space-between;
+  align-items: center;
 }
 
-.hero-info {
-  width: 50%;
-  /* line-height: 5rem; */
-  position: relative;
-}
-
-.hero-info h2 {
+nav h1 {
   font-size: 2rem;
-  margin-bottom: 20px;
 }
 
-.h1-wrap {
-  background-color: #2b2b2b;
-  border-radius: 20px;
-  position: relative;
-  left: -110px;
-  padding: 14px 20px 14px 110px;
-}
-
-.hero-info h1 {
-  font-size: 2.5rem;
-  color: #81a1f3;
-}
-
-.hero-info p {
-  margin-top: 10px;
-  line-height: 1.6rem;
-  font-size: 1.3rem;
-}
-
-.img-container {
-  width: 450px;
-  height: 400px;
-  background-color: white;
-  position: relative;
-}
-
-.img-container img {
-  top: -2rem;
-  left: -2rem;
+.main-nav {
+  list-style-type: none;
+  width: 90vw;
   position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.main-nav.container {
+  flex-direction: column;
+  padding: 0;
+}
+
+.main-nav li {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  border: 1px solid green;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 90vw;
+}
+
+.nav-link {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  border: 1px solid blue;
 }
